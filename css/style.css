@@ -195,36 +195,3 @@ body {
   transform: translateY(-3px);
 }
 /*                */
-/* Media Query للشاشات الصغيرة والموبايل (أقل من 992px) */
-@media (max-width: 991.98px) {
-  /* تسنتر المحتوى والنصوص في الموبايل */
-  .hero-section,
-  .section-title,
-  #about,
-  #skills,
-  #projects,
-  #experience,
-  #certifications,
-  #contact {
-    text-align: center;
-  }
-
-  /* تسنتر الأزرار والـ Flex Containers */
-  .d-flex {
-    justify-content: center !important;
-  }
-
-  /* تسنتر خط الفاصل تحت العناوين */
-  .section-divider {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  /* ضبط الصورة الشخصية في المنتصف */
-  .hero-image-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-}
