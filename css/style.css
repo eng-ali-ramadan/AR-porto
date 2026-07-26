@@ -4,17 +4,10 @@
 
 
    /* منع ظهور أي سكرول بار أفقي في الصفحة كلها */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden !important;
-}
+
 
 /* إصلاح هامي للـ Rows في Bootstrap لمنع الخروج عن الشاشة */
-.row {
-  --bs-gutter-x: 1.5rem;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
+
 body section {
   width: 100%;
   margin: 0 auto;
