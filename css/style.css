@@ -1,0 +1,230 @@
+/* ==========================================================
+   Root Variables & Base Setup
+   ========================================================== */
+:root {
+  --primary-blue: #0d6efd;
+  --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #00d4ff 100%);
+  --glass-bg-dark: rgba(15, 23, 42, 0.75);
+  --glass-border-dark: rgba(255, 255, 255, 0.1);
+  --glass-bg-light: rgba(255, 255, 255, 0.75);
+  --glass-border-light: rgba(0, 0, 0, 0.08);
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+  --font-code: 'Fira Code', monospace;
+}
+
+body {
+  font-family: var(--font-main);
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* ==========================================================
+   Typography & Accents
+   ========================================================== */
+.text-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: var(--primary-gradient);
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+/* ==========================================================
+   Glassmorphism UI Elements
+   ========================================================== */
+[data-bs-theme="dark"] .glass-card,
+[data-bs-theme="dark"] .navbar-glass {
+  background: var(--glass-bg-dark);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border-dark);
+}
+
+[data-bs-theme="light"] .glass-card,
+[data-bs-theme="light"] .navbar-glass {
+  background: var(--glass-bg-light);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border-light);
+}
+
+.glass-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================
+   Preloader
+   ========================================================== */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bs-body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* ==========================================================
+   Hero Section
+   ========================================================== */
+.hero-section {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(13, 110, 253, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.hero-profile-img {
+  width: 350px;
+  height: 400px;
+   object-fit: cover;
+  border-radius: 40%;
+  border: 4px solid rgba(13, 110, 253, 0.3);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--bs-border-color);
+  color: var(--bs-body-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ==========================================================
+   Cards & Interactive Blocks
+   ========================================================== */
+.skill-badge {
+  font-size: 0.9rem;
+  padding: 0.6em 0.9em;
+  background: rgba(13, 110, 253, 0.08);
+  color: var(--bs-body-color);
+  border: 1px solid rgba(13, 110, 253, 0.15);
+  border-radius: 8px;
+}
+
+.project-img-wrapper {
+  max-height: 220px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.contact-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(13, 110, 253, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+/* ==========================================================
+   Scroll To Top Button
+   ========================================================== */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-3px);
+}
+/*                */
+/* Media Query للشاشات الصغيرة والموبايل (أقل من 992px) */
+@media (max-width: 991.98px) {
+  /* تسنتر المحتوى والنصوص في الموبايل */
+  .hero-section,
+  .section-title,
+  #about,
+  #skills,
+  #projects,
+  #experience,
+  #certifications,
+  #contact {
+    text-align: center;
+  }
+
+  /* تسنتر الأزرار والـ Flex Containers */
+  .d-flex {
+    justify-content: center !important;
+  }
+
+  /* تسنتر خط الفاصل تحت العناوين */
+  .section-divider {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* ضبط الصورة الشخصية في المنتصف */
+  .hero-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

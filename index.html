@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ali Ramadan - Full Stack .NET Web Developer specializing in C#, ASP.NET Core, and SQL Server.">
+  <meta name="keywords" content="Ali Ramadan, Full Stack Developer, .NET Developer, C#, ASP.NET Core, Web Developer Portfolio">
+  <meta name="author" content="Ali Ramadan">
+  <title>Ali Ramadan | Full Stack .NET Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <span class="text-gradient">&lt;AliRamadan /&gt;</span>
+      </a>
+      <div class="d-flex align-items-center order-lg-last ms-3">
+        <!-- Theme Toggle Switch -->
+        <button class="btn btn-icon btn-theme-toggle me-2" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fs-4 text-body"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center py-3 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+    <div class="hero-bg-glow"></div>
+    <div class="container position-relative z-1">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7 text-center text-lg-start" data-aos="fade-right">
+          <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fs-6 fw-semibold">
+            <i class="fa-solid fa-code me-2"></i>Available for Opportunities
+          </span>
+          <h1 class="display-3 fw-extrabold mb-3">Hi, I'm <span class="text-gradient">Ali Ramadan</span></h1>
+          <h2 class="h3 text-secondary mb-4">Full Stack .NET Web Developer</h2>
+          <p class="lead text-muted mb-4 max-w-600">
+            Passionate Full Stack .NET Developer with a strong foundation in C#, ASP.NET Core, SQL Server, HTML, CSS, JavaScript, and Bootstrap. I enjoy building scalable web applications, solving real-world problems, and continuously learning modern technologies.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
+            <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-4">Contact Me <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          </div>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+            <span class="text-muted fs-6">Connect:</span>
+            <a href="https://www.linkedin.com/in/ali-ramadan-965976364" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:asd583129@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center" data-aos="fade-left">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-backdrop"></div>
+            <!-- Replace with your actual photo path -->
+            <img src="./css/6f2ccbdd-e79c-4052-ac3c-de393ce22abd.jpg" alt="Ali Ramadan" class="img-fluid rounded-circle hero-profile-img shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-6 bg-body-tertiary">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="glass-card p-4 p-md-5 rounded-4">
+            <h3 class="fw-bold mb-3">Building robust & scalable backend systems</h3>
+            <p class="text-muted lead fs-6">
+              I am a dedicated Full Stack .NET Developer driven by a focus on clean architectural principles, efficient algorithms, and responsive frontend integrations.
+            </p>
+            <p class="text-muted mb-4">
+              My core interests lie in backend software engineering, RESTful microservices, and modern database optimization. I aim to build software that is not only functional but maintainable and reliable under high loads.
+            </p>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-check-circle text-primary fs-5"></i>
+                  <span>Backend Focused</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-check-circle text-primary fs-5"></i>
+                  <span>Clean Code Advocate</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-check-circle text-primary fs-5"></i>
+                  <span>Problem Solver</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="fa-solid fa-check-circle text-primary fs-5"></i>
+                  <span>Continuous Learner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="stat-card glass-card p-4 text-center rounded-4">
+                <i class="fa-solid fa-layer-group text-primary fs-2 mb-2"></i>
+                <h4 class="fw-bold mb-0">.NET Core</h4>
+                <p class="text-muted small mb-0">Web APIs & MVC</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card glass-card p-4 text-center rounded-4">
+                <i class="fa-solid fa-database text-primary fs-2 mb-2"></i>
+                <h4 class="fw-bold mb-0">SQL Server</h4>
+                <p class="text-muted small mb-0">Relational DBs</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card glass-card p-4 text-center rounded-4">
+                <i class="fa-solid fa-code text-primary fs-2 mb-2"></i>
+                <h4 class="fw-bold mb-0">C#</h4>
+                <p class="text-muted small mb-0">OOP & LINQ</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stat-card glass-card p-4 text-center rounded-4">
+                <i class="fa-solid fa-laptop-code text-primary fs-2 mb-2"></i>
+                <h4 class="fw-bold mb-0">Frontend</h4>
+                <p class="text-muted small mb-0">JS & Bootstrap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-6">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Backend -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-group-card glass-card p-4 rounded-4 h-100">
+            <h4 class="h5 fw-bold mb-4 text-primary"><i class="fa-solid fa-server me-2"></i>Backend</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge skill-badge"><i class="fa-solid fa-code me-1 text-primary"></i> C#</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-cubes me-1 text-primary"></i> ASP.NET Core</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-network-wired me-1 text-primary"></i> ASP.NET MVC</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-plug me-1 text-primary"></i> REST APIs</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-link me-1 text-primary"></i> EF Core</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-group-card glass-card p-4 rounded-4 h-100">
+            <h4 class="h5 fw-bold mb-4 text-primary"><i class="fa-solid fa-desktop me-2"></i>Frontend</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge skill-badge"><i class="fa-brands fa-html5 me-1 text-danger"></i> HTML5</span>
+              <span class="badge skill-badge"><i class="fa-brands fa-css3-alt me-1 text-info"></i> CSS3</span>
+              <span class="badge skill-badge"><i class="fa-brands fa-js me-1 text-warning"></i> JavaScript</span>
+              <span class="badge skill-badge"><i class="fa-brands fa-bootstrap me-1 text-purple"></i> Bootstrap</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-mobile-screen me-1 text-success"></i> Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-group-card glass-card p-4 rounded-4 h-100">
+            <h4 class="h5 fw-bold mb-4 text-primary"><i class="fa-solid fa-database me-2"></i>Database</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge skill-badge"><i class="fa-solid fa-table me-1 text-primary"></i> SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-group-card glass-card p-4 rounded-4 h-100">
+            <h4 class="h5 fw-bold mb-4 text-primary"><i class="fa-solid fa-wrench me-2"></i>Tools</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge skill-badge"><i class="fa-brands fa-git-alt me-1 text-danger"></i> Git</span>
+              <span class="badge skill-badge"><i class="fa-brands fa-github me-1"></i> GitHub</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-code me-1 text-purple"></i> Visual Studio</span>
+              <span class="badge skill-badge"><i class="fa-solid fa-laptop-code me-1 text-info"></i> VS Code</span>
+              <span class="badge skill-badge"><i class="fa-brands fa-docker me-1 text-primary"></i> Docker (Basic)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-6 bg-body-tertiary">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card glass-card overflow-hidden rounded-4 h-100 d-flex flex-column">
+            <div class="project-img-wrapper overflow-hidden position-relative">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h3 class="h4 fw-bold">E-Commerce Website</h3>
+              <p class="text-muted small">Full-featured online shop with product catalog management, shopping cart functionality, and secure checkout processing.</p>
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body border">ASP.NET Core</span>
+                  <span class="badge bg-secondary-subtle text-body border">SQL Server</span>
+                  <span class="badge bg-secondary-subtle text-body border">Entity Framework</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill"><i class="fa-brands fa-github me-1"></i> Code</a>
+                  <a href="#" target="_blank" class="btn btn-sm btn-primary rounded-pill"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card glass-card overflow-hidden rounded-4 h-100 d-flex flex-column">
+            <div class="project-img-wrapper overflow-hidden position-relative">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h3 class="h4 fw-bold">Restaurant Management System</h3>
+              <p class="text-muted small">Comprehensive solution for managing restaurant table reservations, order tracking, and inventory control.</p>
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body border">HTML</span>
+                  <span class="badge bg-secondary-subtle text-body border">CSS</span>
+                  <span class="badge bg-secondary-subtle text-body border">JavaScript</span>
+                  <span class="badge bg-secondary-subtle text-body border">Bootstrap</span>
+                  <span class="badge bg-secondary-subtle text-body border">Node.js</span>
+                  <span class="badge bg-secondary-subtle text-body border">MongoDB</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill"><i class="fa-brands fa-github me-1"></i> Code</a>
+                  <a href="#" target="_blank" class="btn btn-sm btn-primary rounded-pill"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card glass-card overflow-hidden rounded-4 h-100 d-flex flex-column">
+            <div class="project-img-wrapper overflow-hidden position-relative">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h3 class="h4 fw-bold">Task Management System</h3>
+              <p class="text-muted small">Productivity platform supporting user role authorization, task assignments, deadline notifications, and progress charts.</p>
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body border">C#</span>
+                  <span class="badge bg-secondary-subtle text-body border">ASP.NET MVC</span>
+                  <span class="badge bg-secondary-subtle text-body border">SQL Server</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill"><i class="fa-brands fa-github me-1"></i> Code</a>
+                  <a href="#" target="_blank" class="btn btn-sm btn-primary rounded-pill"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card glass-card overflow-hidden rounded-4 h-100 d-flex flex-column">
+            <div class="project-img-wrapper overflow-hidden position-relative">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <h3 class="h4 fw-bold">Web API Project</h3>
+              <p class="text-muted small">Scalable RESTful API service equipped with JWT Authentication, Swagger documentation, and automated integration tests.</p>
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-secondary-subtle text-body border">ASP.NET Core Web API</span>
+                  <span class="badge bg-secondary-subtle text-body border">EF Core</span>
+                  <span class="badge bg-secondary-subtle text-body border">Swagger</span>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill"><i class="fa-brands fa-github me-1"></i> Code</a>
+                  <a href="#" target="_blank" class="btn btn-sm btn-primary rounded-pill"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Experience Section -->
+  <section id="experience" class="py-6">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Education -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="h3 fw-bold mb-4"><i class="fa-solid fa-graduation-cap text-primary me-2"></i>Education</h2>
+          <div class="timeline-wrapper">
+            <div class="timeline-item glass-card p-4 rounded-4 mb-3 position-relative">
+              <span class="badge bg-primary-subtle text-primary mb-2">Graduated</span>
+              <h3 class="h5 fw-bold mb-1">Bachelor of Information Technology</h3>
+              <p class="text-muted small mb-2">Faculty of Information Technology</p>
+              <p class="text-muted mb-0">Focused on Core Computer Science principles, Data Structures, Algorithms, Software Engineering methodologies, and Database Design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="h3 fw-bold mb-4"><i class="fa-solid fa-briefcase text-primary me-2"></i>Experience</h2>
+          <div class="timeline-wrapper">
+            <div class="timeline-item glass-card p-4 rounded-4 mb-3 position-relative">
+              <span class="badge bg-primary-subtle text-primary mb-2">Present</span>
+              <h3 class="h5 fw-bold mb-1">Full Stack .NET Trainee & Developer</h3>
+              <p class="text-muted small mb-2">Professional Training Program</p>
+              <p class="text-muted mb-0">Currently pursuing intensive professional training in Full Stack .NET Development while building practical projects and continuously enhancing backend architectures and frontend user interfaces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-6 bg-body-tertiary">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-solid fa-award text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">Programming in C#</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-solid fa-code text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">HTML5, CSS3 & JavaScript</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-brands fa-github text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">Git & GitHub</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="250">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-solid fa-database text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">SQL Server</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-solid fa-gears text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">ASP.NET Core Web API</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-solid fa-network-wired text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">ASP.NET MVC</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+          <div class="cert-card glass-card p-4 text-center rounded-4 h-100">
+            <i class="fa-brands fa-docker text-primary fs-1 mb-3"></i>
+            <h3 class="h6 fw-bold">Docker Fundamentals</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-6 position-relative">
+    <div class="container position-relative z-1">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+        <p class="text-muted">Feel free to reach out for opportunities, collaborations, or questions!</p>
+      </div>
+
+      <div class="row gy-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card p-4 p-md-5 rounded-4 h-100">
+            <h3 class="fw-bold mb-4">Contact Information</h3>
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope text-primary"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">Email</span>
+                <a href="mailto:asd583129@gmail.com" class="fw-semibold text-body text-decoration-none">asd583129@gmail.com</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-linkedin-in text-primary"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/ali-ramadan-965976364" target="_blank" class="fw-semibold text-body text-decoration-none">linkedin.com/in/aliramadan</a>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-github text-primary"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">GitHub</span>
+                <a href="https://github.com/ali-ramadan" target="_blank" class="fw-semibold text-body text-decoration-none">github.com/ali-ramadan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+  <form id="contactForm" method="POST" action="https://formspree.io/f/mqergjvg" class="glass-card p-4 p-md-5 rounded-4">
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" name="name" class="form-control" id="name" required placeholder="John Doe">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" name="email" class="form-control" id="email" required placeholder="john@example.com">
+      </div>
+      <div class="col-12">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" name="subject" class="form-control" id="subject" required placeholder="Project Opportunity / Inquiry">
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea name="message" class="form-control" id="message" rows="5" required placeholder="Hello Ali, I would like to discuss..."></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+      </div>
+    </div>
+  </form>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 border-top">
+    <div class="container text-center">
+      <p class="mb-0 text-muted">&copy; 2026 Ali Ramadan. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollTopBtn" class="btn btn-primary rounded-circle" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
