@@ -194,4 +194,32 @@ body {
 #scrollTopBtn:hover {
   transform: translateY(-3px);
 }
-/*                */
+/*         نننننننننننننننننننن       */
+/* تسنتر كل السكاشن ومحتوياتها في جميع الشاشات (موبايل ولاب توب) */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* تسنتر المحتوى رأسيًا */
+  align-items: center;     /* تسنتر المحتوى أفقيًا */
+  text-align: center !important; /* تسنتر كل النصوص */
+}
+
+/* ضمان تسنتر الـ container والصفوف داخل السكاشن */
+section .container {
+  width: 100%;
+}
+
+section .row {
+  justify-content: center !important; /* تسنتر الأعمده والكروت في منتصف الشاشة */
+}
+
+/* تسنتر الأزرار وعناصر الـ flex */
+section .d-flex {
+  justify-content: center !important;
+}
+
+/* تسنتر الخط الفاصل تحت العناوين */
+.section-divider {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
