@@ -117,7 +117,8 @@ body {
    ========================================================== */
 .hero-section {
   min-height: 800px;
-  padding-top: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .hero-bg-glow {
