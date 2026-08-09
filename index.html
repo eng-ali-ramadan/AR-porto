@@ -8,23 +8,17 @@
   <meta name="author" content="Ali Ramadan">
   <title>Ali Ramadan | Full Stack .NET & Web Developer</title>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Preloader -->
   <div id="preloader">
     <div class="spinner-border text-primary" role="status">
       <span class="visually-hidden">Loading...</span>
@@ -38,7 +32,9 @@
         <span class="text-gradient">&lt;AliRamadan /&gt;</span>
       </a>
       <div class="d-flex align-items-center order-lg-last ms-3">
-        <!-- Theme Toggle Switch -->
+
+
+
         <button class="btn btn-icon btn-theme-toggle me-2" id="themeToggle" aria-label="Toggle theme">
           <i class="fa-solid fa-moon" id="themeIcon"></i>
         </button>
@@ -54,13 +50,12 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- f Section -->
   <section id="home" class="hero-section d-flex align-items-center position-relative overflow-hidden">
     <div class="hero-bg-glow"></div>
     <div class="container position-relative z-1">
@@ -90,7 +85,6 @@
         <div class="col-lg-5 text-center" data-aos="fade-left">
           <div class="hero-image-wrapper">
             <div class="hero-image-backdrop"></div>
-            <!-- Replace with your actual photo path -->
             <img src="./css/6f2ccbdd-e79c-4052-ac3c-de393ce22abd.jpg" alt="Ali Ramadan" class="img-fluid rounded-circle hero-profile-img shadow-lg">
           </div>
         </div>
@@ -459,95 +453,21 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-6 position-relative">
-    <div class="container position-relative z-1">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="section-divider"></div>
-        <p class="text-muted">Feel free to reach out for opportunities, collaborations, or questions!</p>
-      </div>
 
-      <div class="row gy-5">
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="glass-card p-4 p-md-5 rounded-4 h-100">
-            <h3 class="fw-bold mb-4">Contact Information</h3>
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="contact-icon-box">
-                <i class="fa-solid fa-envelope text-primary"></i>
-              </div>
-              <div>
-                <span class="text-muted small d-block">Email</span>
-                <a href="mailto:aliramadan22665@gmail.com" class="fw-semibold text-body text-decoration-none">click to send me an email</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-3 mb-4">
-              <div class="contact-icon-box">
-                <i class="fa-brands fa-linkedin-in text-primary"></i>
-              </div>
-              <div>
-                <span class="text-muted small d-block">LinkedIn</span>
-                <a href="https://www.linkedin.com/in/ali-ramadan-965976364" target="_blank" class="fw-semibold text-body text-decoration-none">click to view my LinkedIn profile</a>
-              </div>
-            </div>
-            <div class="d-flex align-items-center gap-3">
-              <div class="contact-icon-box">
-                <i class="fa-brands fa-github text-primary"></i>
-              </div>
-              <div>
-                <span class="text-muted small d-block">GitHub</span>
-                <a href="https://github.com/eng-ali-ramadan" target="_blank" class="fw-semibold text-body text-decoration-none">click to view my GitHub profile</a>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-7" data-aos="fade-left">
-<form id="contactForm" method="POST" action="https://formspree.io/f/mqergjvg" class="glass-card p-4 p-md-5 rounded-4">
-  <div class="row g-3">
-    <div class="col-md-6">
-      <label for="name" class="form-label">Your Name</label>
-      <input type="text" name="name" class="form-control" id="name" required placeholder="Ahmed Ali">
-    </div>
-    <div class="col-md-6">
-      <label for="email" class="form-label">Your Email</label>
-      <input type="email" name="email" class="form-control" id="email" required placeholder="john@example.com">
-    </div>
-    <div class="col-12">
-      <label for="subject" class="form-label">Subject</label>
-      <input type="text" name="subject" class="form-control" id="subject" required placeholder="Project Opportunity / Inquiry">
-    </div>
-    <div class="col-12">
-      <label for="message" class="form-label">Message</label>
-      <textarea name="message" class="form-control" id="message" rows="5" required placeholder="Hello Ali, I would like to discuss..."></textarea>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
-    </div>
-  </div>
-</form>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
   <footer class="py-4 border-top">
     <div class="container text-center">
       <p class="mb-0 text-muted">&copy; 2026 Ali Ramadan. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- Scroll-to-Top Button -->
   <button id="scrollTopBtn" class="btn btn-primary rounded-circle" aria-label="Scroll to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Custom JS -->
   <script src="js/main.js"></script>
 
 
