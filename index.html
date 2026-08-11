@@ -50,6 +50,7 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -79,7 +80,7 @@
           <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
             <span class="text-muted fs-6">Connect:</span>
             <a href="https://www.linkedin.com/in/ali-ramadan-965976364" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:aliramadan22665@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#contact" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
         <div class="col-lg-5 text-center" data-aos="fade-left">
@@ -454,76 +455,88 @@
   </section>
 
 
-  <section id="contact" class="py-6">
-  <div class="container">
-    
-    <!-- العنوان الرئيسي باستخدام كلاسات ملفك -->
-    <div class="text-center mb-5">
-      <h2 class="section-title text-gradient">تواصل معي</h2>
-      <div class="section-divider"></div>
-    </div>
+<section id="contact" class="py-6 position-relative">
+    <div class="container position-relative z-1">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+        <p class="text-muted p-2">Feel free to reach out for opportunities, collaborations, or questions!</p>
+      </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        
-        <!-- الحاوية باستخدام كلاس glass-card الموجود في ملفك -->
-        <div class="glass-card p-4 p-md-5 rounded-4">
-          
-          <form id="contactForm">
-            <div class="row g-3">
-              
-              <div class="col-md-6">
-                <label for="name" class="form-label fw-bold">الاسم الكامل</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="أدخل اسمك" required>
+      <div class="row gy-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card p-4 p-md-5 rounded-4 h-100">
+            <h3 class="fw-bold mb-4">Contact Information</h3>
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="contact-icon-box">
+                <a href="mailto:aliramadan22665@gmail.com" class="fw-semibold text-body text-decoration-none p-2"><i class="fa-solid fa-envelope text-primary p-2"></i></a>
               </div>
-
-              <div class="col-md-6">
-                <label for="email" class="form-label fw-bold">البريد الإلكتروني</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" required>
+              <div>
+                <span class="text-muted small d-block">Email</span>
+                
               </div>
-
-              <div class="col-12">
-                <label for="subject" class="form-label fw-bold">عنوان الرسالة</label>
-                <input type="text" class="form-control" id="subject" name="subject" placeholder="موضوع الرسالة" required>
-              </div>
-
-              <div class="col-12">
-                <label for="message" class="form-label fw-bold">الرسالة</label>
-                <textarea class="form-control" id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
-              </div>
-
-              <div class="col-12 text-center mt-4">
-                <button type="submit" id="submitBtn" class="btn btn-primary w-100 py-3 fw-bold">إرسال الرسالة</button>
-              </div>
-
             </div>
-          </form>
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="contact-icon-box">
+                
+                  <a href="https://www.linkedin.com/in/ali-ramadan-965976364" target="_blank" class="fw-semibold text-body text-decoration-none p-2"><i class="fa-brands fa-linkedin-in text-primary p-2"></i></a>
 
-          <!-- تنبيه حالة الإرسال باستخدام Bootstrap -->
-          <div id="statusMessage" class="alert mt-3 text-center d-none" role="alert"></div>
+              </div>
+              <div>
+                <span class="text-muted small d-block">LinkedIn</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
 
+
+              <!-- git -->
+              <div class="contact-icon-box">
+
+                <a href="https://github.com/eng-ali-ramadan" target="_blank" class="fw-semibold text-body text-decoration-none p-2"><i class="fa-brands fa-github text-primary p-2"></i></a>
+
+                
+              </div>
+              <div>
+                <span class="text-muted small d-block">GitHub</span>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div class="col-lg-7" data-aos="fade-left">
+          <form id="contactForm" class="glass-card p-4 p-md-5 rounded-4">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required placeholder="Ahmed Ali">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" class="form-control" id="email" required placeholder="you@example.com">
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" name="subject" class="form-control" id="subject" required placeholder="Project Opportunity / Inquiry">
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="5" required placeholder="Hello Ali, I would like to discuss..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-lg rounded-pill w-100">send <i class="fa-solid fa-paper-plane ms-2"></i></button>
+              </div>
+              <div class="col-12">
+                <div id="statusMessage" class="alert mt-3 text-center d-none"></div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-
-
-  <footer class="py-4 border-top">
-    <div class="container text-center">
-      <p class="mb-0 text-muted">&copy; 2026 Ali Ramadan. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <button id="scrollTopBtn" class="btn btn-primary rounded-circle" aria-label="Scroll to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-  <script>const form = document.getElementById('contactForm');
+<script>
+const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const statusMessage = document.getElementById('statusMessage');
 
@@ -531,7 +544,7 @@ form.addEventListener('submit', async function(e) {
   e.preventDefault();
 
   submitBtn.disabled = true;
-  submitBtn.textContent = 'جاري الإرسال...';
+  submitBtn.textContent = 'Sending...';
   statusMessage.className = 'alert mt-3 text-center d-none';
 
   const formData = {
@@ -554,19 +567,35 @@ form.addEventListener('submit', async function(e) {
 
     if (response.ok) {
       statusMessage.className = 'alert alert-success mt-3 text-center';
-      statusMessage.textContent = 'تم إرسال رسالتك بنجاح!';
+      statusMessage.textContent = 'submitted successfully';
       form.reset();
     } else {
-      throw new Error('حدث خطأ أثناء الإرسال.');
+      throw new Error('error');
     }
   } catch (error) {
     statusMessage.className = 'alert alert-danger mt-3 text-center';
-    statusMessage.textContent = 'حدث خطأ أثناء إرسال الرسالة، يرجى المحاولة مرة أخرى.';
+    statusMessage.textContent = 'An error occurred while submitting the form. Please try again.';
   } finally {
     submitBtn.disabled = false;
-    submitBtn.textContent = 'إرسال الرسالة';
+    submitBtn.textContent = 'send';
   }
-});</script>
+});
+</script>
+
+
+
+
+  <footer class="py-4 border-top">
+    <div class="container text-center">
+      <p class="mb-0 text-muted">&copy; 2026 Ali Ramadan. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="btn btn-primary rounded-circle" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
