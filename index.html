@@ -1591,89 +1591,32 @@
 
         <div class="col-lg-7" data-aos="fade-left">
 
-<form
-  id="contactForm"
-  class="glass-card contact-form"
-  action="https://formsubmit.co/ali.ramadaan.m@gmail.com"
-  method="POST"
->
-
-  <div class="row g-4">
-
-    <div class="col-md-6">
-      <label for="name" class="form-label">Your Name</label>
-      <input
-        id="name"
-        name="name"
-        type="text"
-        class="form-control"
-        placeholder="Ahmed Ali"
-        required
-      >
-    </div>
-
-    <div class="col-md-6">
-      <label for="email" class="form-label">Your Email</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        class="form-control"
-        placeholder="you@example.com"
-        required
-      >
-    </div>
-
-    <div class="col-12">
-      <label for="subject" class="form-label">Subject</label>
-      <input
-        id="subject"
-        name="subject"
-        type="text"
-        class="form-control"
-        placeholder="Project Opportunity"
-        required
-      >
-    </div>
-
-    <div class="col-12">
-      <label for="message" class="form-label">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        class="form-control"
-        rows="5"
-        placeholder="Hello Ali, I would like to discuss..."
-        required
-      ></textarea>
-    </div>
-
-    <!-- FormSubmit config fields -->
-    <input type="hidden" name="_subject" value="New message from your portfolio!">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-
-    <div class="col-12">
-      <button
-        id="submitBtn"
-        type="submit"
-        class="btn btn-primary btn-lg rounded-pill w-100"
-      >
-        Send Message
-        <i class="fa-solid fa-paper-plane ms-2"></i>
-      </button>
-    </div>
-
-    <div class="col-12">
-      <div
-        id="statusMessage"
-        class="alert mt-3 text-center d-none"
-      ></div>
-    </div>
-
-  </div>
-
-</form>
+<form id="contactForm" class="glass-card p-4 p-md-5 rounded-4">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required placeholder="Ahmed Ali">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" class="form-control" id="email" required placeholder="you@example.com">
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" name="subject" class="form-control" id="subject" required placeholder="Project Opportunity / Inquiry">
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="message" rows="5" required placeholder="Hello Ali, I would like to discuss..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-lg rounded-pill w-100">send <i class="fa-solid fa-paper-plane ms-2"></i></button>
+              </div>
+              <div class="col-12">
+                <div id="statusMessage" class="alert mt-3 text-center d-none"></div>
+              </div>
+            </div>
+          </form>
 
         </div>
 
@@ -1994,6 +1937,56 @@
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
+
+
+  <script>
+
+const form = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const statusMessage = document.getElementById('statusMessage');
+
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  statusMessage.className = 'alert mt-3 text-center d-none';
+
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    _subject: form.subject.value,
+    message: form.message.value,
+    _captcha: "false"
+  };
+
+  try {
+    const response = await fetch('https://formsubmit.co/ajax/a06446a6624a0cf1031e05a25c62cd38', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      statusMessage.className = 'alert alert-success mt-3 text-center';
+      statusMessage.textContent = 'submitted successfully';
+      form.reset();
+    } else {
+      throw new Error('error');
+    }
+  } catch (error) {
+    statusMessage.className = 'alert alert-danger mt-3 text-center';
+    statusMessage.textContent = 'An error occurred while submitting the form. Please try again.';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'send';
+  }
+});
+
+  </script>
 
   <!-- Bootstrap -->
   <script
