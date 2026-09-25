@@ -863,7 +863,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Full-Stack E-Commerce Website",
 
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=90",
+        "../css/Screenshot 2026-09-21 114909.png",
 
       description:
         "A complete online shopping platform built with Node.js and JavaScript, featuring product management, shopping cart functionality, REST-style backend communication and a responsive frontend.",
@@ -894,75 +894,42 @@ document.addEventListener("DOMContentLoaded", () => {
     },
 
 
-    laptops: {
+   
+
+
+restaurant: {
 
       title:
-        "Shop Laptops Web Application",
+        "Restaurant Ordering & Table Reservation System",
 
       image:
-        "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1600&q=90",
+        "../css/Screenshot 2026-09-21 115433.png",
 
       description:
-        "A full-stack laptop retail web application designed around product browsing, custom backend services and a responsive shopping experience.",
+        "A full-stack restaurant management platform built with ASP.NET Core MVC, covering online food ordering, table reservations, an admin dashboard, and a live kitchen view.",
 
       technologies: [
-        "Node.js",
-        "Express",
-        "JavaScript",
-        "Bootstrap"
+        "ASP.NET Core MVC",
+        "C#",
+        "Entity Framework Core",
+        "SQL Server",
+        "ASP.NET Identity"
       ],
 
       code:
-        "https://github.com/eng-ali-ramadan",
+        "https://github.com/eng-ali-ramadan/restaunts-ys.git",
 
       demo:
-        null,
+        "https://aklny.tryasp.net/",
 
       goal:
-        "Create a focused online laptop shopping experience with a clean and easy-to-use interface.",
+        "Build a complete restaurant management system covering customer ordering, staff/kitchen operations, and admin management in one platform.",
 
       development:
-        "The project uses Node.js and Express for backend services together with JavaScript and Bootstrap for the frontend.",
+        "Worked as part of a 3-person team, splitting the system into three modules: Admin Management (dashboard, CRUD for dishes/categories/coupons/tables), Staff/Kitchen & Operations (live kitchen view, reservation confirmations, order receipts), and Customer & Public View (menu browsing, cart & checkout, order tracking, and reservations). The data layer (models, DbContext, seeding, and an Identity-protected controller example) was scaffolded first as the project's foundation.",
 
       result:
-        "A full-stack retail application demonstrating communication between frontend interfaces and custom backend services."
-
-    },
-
-
-    pizza: {
-
-      title:
-        "Pizza Restaurant Website",
-
-      image:
-        "https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1600&q=90",
-
-      description:
-        "An interactive React frontend for a restaurant, designed around dynamic menu browsing and order customization.",
-
-      technologies: [
-        "React",
-        "JavaScript",
-        "HTML5",
-        "CSS3",
-        "Bootstrap"
-      ],
-
-      code:
-        "https://github.com/eng-ali-ramadan",
-
-      demo:
-        null,
-
-      goal:
-        "Build an engaging restaurant interface that makes menu exploration and order customization simple.",
-
-      development:
-        "The interface uses reusable React components, modern JavaScript and responsive Bootstrap layouts.",
-
-      result:
-        "A responsive restaurant frontend demonstrating component-based development and interactive user experiences."
+        "A working restaurant management platform with role-based modules, live order/reservation tracking, and a seeded SQL Server database, deployed and demoed live."
 
     },
 
@@ -973,7 +940,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Personal Finance Manager",
 
       image:
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=90",
+        "../css/Screenshot 2026-09-25 113111.png",
 
       description:
         "A .NET application for recording personal income and expenses, categorizing transactions, monitoring balances and managing budgets.",
